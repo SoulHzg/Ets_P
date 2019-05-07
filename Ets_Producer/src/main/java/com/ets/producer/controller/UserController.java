@@ -26,9 +26,7 @@ public class UserController {
 
     @RequestMapping("/rabbitSend")
     public void rabbitSend(){
-        System.out.println("In UserController，method rabbitSend...发送rabbitMQ消息开始...");
         rabbitSender.sendDirectQueue();
-        System.out.println("In UserController，method rabbitSend...发送rabbitMQ消息结束...");
     }
 
 
